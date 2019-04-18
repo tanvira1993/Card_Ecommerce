@@ -1,1 +1,1 @@
-<h1>Project Set Up Done with git</h1>
+<h1>E-commerce Set up</h1>
