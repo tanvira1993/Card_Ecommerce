@@ -1,7 +1,7 @@
 /* Setup Rounting For All Pages */
 EcommerceApp.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
     // Redirect any unmatched url
-    $urlRouterProvider.otherwise("/home");
+    $urlRouterProvider.otherwise("/index");
 
     $stateProvider
 
@@ -9,9 +9,9 @@ EcommerceApp.config(['$stateProvider', '$urlRouterProvider', function($stateProv
     
     //Added by Tanvir
 
-    .state('home', {
-        url: "/home",
-        templateUrl: "/home",
+    .state('index', {
+        url: "/index",
+        templateUrl: "/index",
         data: {pageTitle: 'Home'},
         controller: "HomeController",
         resolve: {
