@@ -27,5 +27,23 @@ EcommerceApp.config(['$stateProvider', '$urlRouterProvider', function($stateProv
         }
     })
 
+        .state('admin', {
+            url: "/admin",
+            templateUrl: "/admin",
+            data: {pageTitle: 'Admin'},
+            controller: "AdminController",
+            resolve: {
+                deps: ['$ocLazyLoad', function ($ocLazyLoad) {
+                    return $ocLazyLoad.load({
+                        name: 'EcommerceApp',
+                        insertBefore: '#ng_load_plugins_before', // load the above css files before a LINK element with this ID. Dynamic CSS files must be loaded between core and theme css files
+                        files: [
+                            'js/Controllers/AdminController.js'
+                        ]
+                    });
+                }]
+            }
+        })
+
 
 }]);
