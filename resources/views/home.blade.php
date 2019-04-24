@@ -3611,7 +3611,6 @@
 <script type="text/javascript" src="frontend/js/owl.carousel.min.js"></script>
 <script type="text/javascript" src="frontend/js/Chart.js"></script>
 <script type="text/javascript" src="frontend/js/doughnutit.js"></script>
-<!--   <script type="text/javascript" src="frontend/js/jquery.subscribe-better.js"></script> -->
 <script type="text/javascript" src="frontend/js/slideshow/jquery.themepunch.revolution.js"></script>
 <script type="text/javascript" src="frontend/js/slideshow/jquery.themepunch.plugins.min.js"></script>
 <script type="text/javascript" src="frontend/js/theme-home.js"></script>
