@@ -77,16 +77,4 @@
         </div>
     </section>
 </main><!--Main index : End-->
-{{--<!--Add js lib-->
-<script type="text/javascript" src="frontend/js/jquery/jquery-1.11.3.min.js"></script>
-<script type="text/javascript" src="frontend/js/jquery/jquery-migrate-1.2.1.min.js"></script>
-<script type="text/javascript" src="frontend/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="frontend/js/modernizr.js"></script>
-<script type="text/javascript" src="frontend/js/jquery.animateSlider.min.js"></script>
-<script type="text/javascript" src="frontend/js/owl.carousel.min.js"></script>
-<script type="text/javascript" src="frontend/js/theme.js"></script>
-<!--[if lt IE 9]>
-<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-<![endif]-->--}}
 
-{{--after comment out the js file respective page's search option worked--}}

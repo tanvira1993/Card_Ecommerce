@@ -64,65 +64,64 @@
                         <h4>Art Director</h4>
                         <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. <span>Lorem ipsum dolor</span> sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. </p>
                     </div></div>
-                <div class="col-md-4 col-sm-4 col-xs-12">
-                    <div>
-                        <img src="frontend/images/abouts/about02.png">
-                        <h3>Kara Kulis</h3>
-                        <h4>Marketing & Sales</h4>
-                        <p>
-                            Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-                        </p>
-                    </div></div>
-                <div class="col-md-4 col-sm-4 col-xs-12">
-                    <div>
-                        <img src="frontend/images/abouts/about03.png">
-                        <h3>Andrea Arkov</h3>
-                        <h4>Public Relations</h4>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.  </p>
-                    </div></div>
-            </div>
-        </div>
-    </section>
-    <section id="aboutbottom" class="pr-main">
-        <div class="container">
-            <h1>What others say about us</h1>
-            <span class="line"></span>
-            <div class="col-md-6 col-sm-6 col-xs-12 iteamleft top">
-                <img src="frontend/images/abouts/about04.png">
-                <div class="data">
-                    <p>Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.</p>
-                    <p class="title">Martha M. Masters</p>
-                    <p class="end">Marketing -<span> WikiTravel</span></p>
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div>
+                            <img src="frontend/images/abouts/about02.png">
+                            <h3>Kara Kulis</h3>
+                            <h4>Marketing & Sales</h4>
+                            <p>
+                                Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                            </p>
+                        </div></div>
+                        <div class="col-md-4 col-sm-4 col-xs-12">
+                            <div>
+                                <img src="frontend/images/abouts/about03.png">
+                                <h3>Andrea Arkov</h3>
+                                <h4>Public Relations</h4>
+                                <p>
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.  </p>
+                            </div></div>
+                        </div>
+                    </div>
+                </section>
+                <section id="aboutbottom" class="pr-main">
+                    <div class="container">
+                        <h1>What others say about us</h1>
+                        <span class="line"></span>
+                        <div class="col-md-6 col-sm-6 col-xs-12 iteamleft top">
+                            <img src="frontend/images/abouts/about04.png">
+                            <div class="data">
+                                <p>Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.</p>
+                                <p class="title">Martha M. Masters</p>
+                                <p class="end">Marketing -<span> WikiTravel</span></p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-12 iteamright top">
+                            <img src="frontend/images/abouts/about05.png">
+                            <div class="data">
+                                <p>In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.</p>
+                                <p class="title">Anna Vandana</p>
+                                <p class="end">CEO -<span> images Wiki</span></p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-12 iteamleft">
+                            <img src="frontend/images/abouts/about06.png">
+                            <div class="data">
+                                <p>Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
+                                <p class="title">Maxi Milli</p>
+                                <p class="end">Public Relations -<span> Max Mobilcom</span></p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-12 iteamright">
+                            <img src="frontend/images/abouts/about08.png">
+                            <div class="data">
+                                <p>In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.</p>
+                                <p class="title">Dr. Dosist</p>
+                                <p class="end">Dean of Medicine - <span> Doom Inc</span></p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="col-md-6 col-sm-6 col-xs-12 iteamright top">
-                <img src="frontend/images/abouts/about05.png">
-                <div class="data">
-                    <p>In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.</p>
-                    <p class="title">Anna Vandana</p>
-                    <p class="end">CEO -<span> images Wiki</span></p>
-                </div>
-            </div>
-            <div class="col-md-6 col-sm-6 col-xs-12 iteamleft">
-                <img src="frontend/images/abouts/about06.png">
-                <div class="data">
-                    <p>Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
-                    <p class="title">Maxi Milli</p>
-                    <p class="end">Public Relations -<span> Max Mobilcom</span></p>
-                </div>
-            </div>
-            <div class="col-md-6 col-sm-6 col-xs-12 iteamright">
-                <img src="frontend/images/abouts/about08.png">
-                <div class="data">
-                    <p>In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.</p>
-                    <p class="title">Dr. Dosist</p>
-                    <p class="end">Dean of Medicine - <span> Doom Inc</span></p>
-                </div>
-            </div>
-        </div>
-        </div>
-    </section>
-</main><!--Main index : End-->
+            </section>
+        </main><!--Main index : End-->
 
-{{--after delete the js file respective page's search option worked--}}

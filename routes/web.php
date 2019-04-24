@@ -19,10 +19,6 @@ Route::get('/home', function () {
 	return view('home');
 });
 
-Route::get('/admin', function () {
-	return view('admin/adminHome');
-});
-
 Route::get('/wishList', function () {
     return view('wishList');
 });
@@ -83,3 +79,6 @@ Route::get('/accountNewsletter', function () {
     return view('accountNewsletter');
 });
 
+Route::get('/accountDashboard', function () {
+    return view('accountDashboard');
+});

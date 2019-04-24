@@ -1,8 +1,8 @@
 /* Setup blank page controller */
-angular.module('EcommerceApp').controller('AdminController', ['$scope', '$rootScope', '$location', '$timeout', '$http', function($scope, $rootScope, $location, $timeout, $http) {
-    $scope.$on('$viewContentLoaded', function() {
+angular.module('EcommerceApp').controller('AccountDashboardController', ['$scope', '$rootScope', '$location', '$timeout', '$http', function($scope, $rootScope, $location, $timeout, $http) {
+	$scope.$on('$viewContentLoaded', function() {
         // initialize core components
-
+        
 
         // set default layout mode
         /*$rootScope.settings.layout.pageContentWhite = true;
