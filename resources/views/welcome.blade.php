@@ -10,6 +10,10 @@
 	<link href='http://fonts.googleapis.com/css?family=Roboto:500,300,700,400' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Arimo:500,300,700,400' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:500,300,700,400' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="css/sweetalert.min.css"/>
+	<link rel="stylesheet" type="text/css" href="css/toastr.min.css">
+
 	<title>E-commerce</title>
 
 </head>
@@ -23,48 +27,48 @@
 					<div class="top-links col-lg-7 col-md-6 col-sm-5 col-xs-6">
 						<ul>
 							<li class="visible-md visible-lg">
-								<a href="myaccount-dashboard.html">
+								<a ui-sref="login">
 									<i class="fa fa-lock"></i>
 									<!-- Account -->
 								</a>
 							</li>
 							<li class="visible-md visible-lg">
-								<a href="wishlist.html">
+								<a ui-sref="wishList">
 									<i class="fa fa-heart"></i>
 									<!-- Wishlist -->
 								</a>
 							</li>
 							<li>
-								<a href="login.html">
+								<a ui-sref="accountDashboard">
 									<i class="fa fa-user"></i>
 									<!-- Login -->
 								</a>
 							</li>
 							<li class="hidden-xs">
-								<a href="register.html">
+								<a ui-sref="userRegister">
 									<i class="fa fa-pencil"></i>
 									<!-- Sign Up -->
 								</a>
 							</li>
 							<li class="hidden-xs">
-								<a href="#">
+								<a href="https://www.facebook.com">
 									<i class="fa fa-facebook"></i>
 									<!-- Connect with facebook -->
 								</a>
 							</li>
 							<li class="hidden-xs">
-								<a href="#">
+								<a href="https://twitter.com">
 									<i class="fa fa-twitter"></i>
 								</a>
-							</li>
+							</li>							
 							<li class="hidden-xs">
-								<a href="#">
-									<i class="fa fa-pinterest"></i>
+								<a href="https://www.linkedin.com">
+									<i class="fa fa-linkedin"></i>
 								</a>
 							</li>
 							<li class="hidden-xs">
-								<a href="#">
-									<i class="fa fa-linkedin"></i>
+								<a ng-if="idUserRole!=null" ng-click="logout()">
+									<i class="fa fa-unlock-alt"></i>
 								</a>
 							</li>
 						</ul>
@@ -74,50 +78,15 @@
 							<div class="block-currency">
 								<div class="currency-active">
 									<span class="currency-name">
-										currency:<span> usd</span><i class="fa fa-angle-down"></i>
-
+										currency:<span> usd</span>
 									</span>
-								</div>
-								<ul>
-									<li>
-										<a href="#" title="Select currency japan">
-											<span>JPY</span>
-										</a>
-									</li>
-									<li>
-										<a href="#" title="Select currency japan">
-											<span>Euro</span>
-										</a>
-									</li>
-									<li>
-										<a href="#" title="Select currency japan">
-											<span>Pound St.</span>
-										</a>
-									</li>
-								</ul>
+								</div>								
 							</div>
 							<div class="language-w clearfix">
 								<div class="language-active">
-									<span class="language-name">Language: <span>English</span><i class="fa fa-angle-down"></i>
+									<span class="language-name">Language: <span>English</span>
 								</span>
-							</div>
-							<ul>
-								<li>
-									<a href="#" title="Select Australia language">
-										<span>Australia</span>
-									</a>
-								</li>
-								<li>
-									<a href="#" title="Select Japan language">
-										<span>Japan</span>
-									</a>
-								</li>
-								<li>
-									<a href="#" title="Select France language">
-										<span>France</span>
-									</a>
-								</li>
-							</ul>
+							</div>							
 						</div>
 						<div class="th-hotline">
 							<i class="fa fa-phone"></i>
@@ -134,7 +103,7 @@
 			<div class="row">
 				<div class="col-lg-4 col-md-2 col-sm-4 col-xs-5 w-logo">
 					<div class="logo hd-pd ">
-						<a href="index.html">
+						<a ui-sref="home">
 							<img src="frontend/images/logo.png" alt="printshop logo">
 						</a>
 					</div>
@@ -787,9 +756,10 @@
 <script type="text/javascript" src="frontend/js/slideshow/jquery.themepunch.revolution.js"></script>
 <script type="text/javascript" src="frontend/js/slideshow/jquery.themepunch.plugins.min.js"></script>
 <script type="text/javascript" src="frontend/js/theme-home.js"></script>
-<!--[if lt IE 9]>
-<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-<![endif]-->
+
+
+<script src="js/sweetalert.min.js" type="text/javascript"></script>
+<script src="js/toastr.min.js" type="text/javascript"></script>
 
 <!--Angular js file-->
 

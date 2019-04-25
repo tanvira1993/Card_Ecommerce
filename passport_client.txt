@@ -1,0 +1,8 @@
+$ php artisan passport:install
+Encryption keys generated successfully.
+Personal access client created successfully.
+Client ID: 1
+Client secret: lhWDZPZhqoR5HLWW8PY69wf7MRe6IRJiqfhfgXAy
+Password grant client created successfully.
+Client ID: 2
+Client secret: V7SCwEoCBdZ5r1SqiQ6I9EjUtsSmUZY8Z0eu3sjp

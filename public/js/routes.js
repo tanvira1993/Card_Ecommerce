@@ -81,18 +81,18 @@ EcommerceApp.config(['$stateProvider', '$urlRouterProvider', function($stateProv
         }
     })
 
-    .state('register', {
-        url: "/register",
-        templateUrl: "/register",
-        data: {pageTitle: 'Register'},
-        controller: "RegisterController",
+    .state('userRegister', {
+        url: "/userRegister",
+        templateUrl: "/userRegister",
+        data: {pageTitle: 'User Register'},
+        controller: "UserRegisterController",
         resolve: {
             deps: ['$ocLazyLoad', function ($ocLazyLoad) {
                 return $ocLazyLoad.load({
                     name: 'EcommerceApp',
                         insertBefore: '#ng_load_plugins_before', // load the above css files before a LINK element with this ID. Dynamic CSS files must be loaded between core and theme css files
                         files: [
-                        'js/Controllers/RegisterController.js'
+                        'js/Controllers/UserRegisterController.js'
                         ]
                     });
             }]

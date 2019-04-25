@@ -25,34 +25,28 @@
             <div class="col-md-9 col-sm-9 col-xs-12">
                 <h1 class="ct-header">Login</h1>
                 <div class="col-md-6 col-sm-6 col-xs-12">
-                    <h4>Returning Customers</h4>
+                    <h4>Customers Panel</h4>
                     <p>If you have an account with us, please log in.</p>
-                    <form id="login-form" class="form-validate form-horizontal" method="post" action="#">
-                        <p>Email Address <span class="star">*</span></p>
-                        <input class="email" type="text" value="">
-                        <p>Password <span class="star">*</span></p>
-                        <input class="pasword" type="text" value="">
-                        <button type="submit" class="login">Login</button>
-                    </form>
-                    <div class="socail">
-                        <h4>Connect with Facebook</h4>
-                        <p><span>Facebook Users</span></p>
-                        <p>Use your Facebook account to login or register within our store.You're just one click away.</p>
-                        <button type="submit" class="connectfa">Connect with facebook</button>
-                    </div>
-                </div>
+                    <form id="login-form" class="form-horizontal" name="loginForm" novalidate>
 
-                <div class="col-md-6 col-sm-6 col-xs-12 right">
-                    <h4>Forgotten Password</h4>
-                    <p>Fill our your email address bellow and we’ll email it to you right away!</p>
-                    <form id="forgotpass-form" class="form-validate form-horizontal" method="post" action="#">
-                        <p>Email Address <span class="star">*</span></p>
-                        <input class="email" type="text" value="">
+                        <div class="has-success" ng-class="{'has-error': loginForm.email.$dirty &amp;&amp; loginForm.email.$invalid ,  'has-success': loginForm.email.$valid}">
+                            <p>Email Address <span class="star">*</span></p>
+                            <input type="text" name="email" ng-model="loginInfo.email" class="form-control ng-not-empty ng-dirty ng-valid-required ng-valid ng-valid-email ng-touched" placeholder="Email" required="">
+                            <span class="help-block ng-hide" ng-show="loginForm.email.$dirty &amp;&amp; loginForm.email.$error.email">Your
+                            email address is invalid</span>
+                        </div>
 
-                        <button type="submit" class="ressetpass">Retrieve Password</button>
-                    </form>
+                        <div class="has-success" ng-class="{'has-error': loginForm.pass.$dirty &amp;&amp; loginForm.pass.$error.required ,  'has-success': loginForm.pass.$valid}">
+                            <p>Create a password <span class="star">*</span></p>
+                            <input type="password" name="pass" ng-model="loginInfo.pass" class="form-control ng-pristine ng-untouched ng-empty ng-invalid ng-invalid-required" placeholder="Password" required="">
+                        </div>
+                        <button type="submit" ng-click="login()" class="login">Login</button>
+                    </form>                    
                 </div>
             </div>
+            <pre>
+                @{{loginInfo | json}}
+            </pre>
             <div class="col-md-3 col-sm-3 col-xs-12">
                 <img src="frontend/images/banner/login/banner-login.jpg" />
             </div>
