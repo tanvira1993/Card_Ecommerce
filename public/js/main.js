@@ -38,7 +38,10 @@ var EcommerceApp = angular.module("EcommerceApp", [
 	//   $httpProvider.defaults.headers.post['X-CSRF-TOKEN'] = $('meta[name=csrf-token]').attr('content');
 }]);*/
 
-
+EcommerceApp.config(['$httpProvider', function($httpProvider) {
+    $httpProvider.interceptors.push('MaxInterceptor');
+    //   $httpProvider.defaults.headers.post['X-CSRF-TOKEN'] = $('meta[name=csrf-token]').attr('content');
+}]);
 /*============================================
 =            localstorage service            =
 ============================================*/
@@ -57,6 +60,43 @@ var EcommerceApp = angular.module("EcommerceApp", [
 }]);
 *//*=====  End of localstorage service  ======*/
 
+EcommerceApp.factory('MaxInterceptor', ['$rootScope','$q', function ($rootScope,$q) {
+    var interceptor = {
+        request: function(config) {
+            config.headers['Content-Type'] = 'application/x-www-form-urlencoded';
+            if (!!$rootScope.token) {
+                config.headers.Token = 'Bearer '+ 'kochu '+$rootScope.token;
+                config.headers.idUser = $rootScope.idUser;
+                config.headers.idUserRole = $rootScope.idUserRole;
+
+            }
+
+            if (config.method === 'POST') {
+                config.data = $.param(config.data);
+            }
+            return config;
+        },
+        response: function(response) {
+            return response;
+        },
+        responseError: function(response, error) {
+            /*var redirectUrl = $rootScope.CURRENT_API;
+            redirectUrl = window.btoa(redirectUrl);
+            redirectUrl = encodeURIComponent(redirectUrl);
+            console.log('Response : ', response, 'error : ',error);
+            if (response.status === 401) {
+                if (response.statusText.toLowerCase() === 'unauthorized') {
+                    window.localStorage.removeItem('MyToken');
+                    window.localStorage.removeItem('userInfo');
+                    window.location.href = CURRENT_LOGIN+'login/index/'+redirectUrl;
+                }
+            }*/
+
+            return $q.reject(response);
+        }
+    };
+    return interceptor;
+}]);
 // EcommerceApp.factory('MaxInterceptor', ['$rootScope','$q', function ($rootScope,$q) {
 // 	var interceptor = {
 // 		request: function(config) {
@@ -180,6 +220,14 @@ initialization can be disabled and Layout.init() should be called on page load c
 /* Init global settings and run the app */
 EcommerceApp.run(['$rootScope', '$http','$state','$window', '$filter', '$location',function($rootScope, $http, $state,$window, $filter,$location) {
 	
+    $rootScope.token = localStorage.getItem('token');
+    $rootScope.idUser = localStorage.getItem('idUser');
+    $rootScope.idUserRole= localStorage.getItem('idUserRole');
+
+    $rootScope.logout = function(){
+
+        window.location.href = 'login/logout/';
+    }
 }]);
 /*
     $rootScope.$state = $state; // state to be accessed from view

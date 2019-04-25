@@ -31,8 +31,8 @@ Route::get('/login', function () {
     return view('login');
 });
 
-Route::get('/register', function () {
-    return view('register');
+Route::get('/userRegister', function () {
+    return view('userRegister');
 });
 
 Route::get('/categoryList', function () {
@@ -81,4 +81,8 @@ Route::get('/accountNewsletter', function () {
 
 Route::get('/accountDashboard', function () {
     return view('accountDashboard');
+});
+
+Route::get('login/logout', function () {
+    return (String)view('logout_view');
 });
