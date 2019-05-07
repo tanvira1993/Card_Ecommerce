@@ -46,7 +46,7 @@ angular.module('EcommerceApp').controller('UserRegisterController', ['$scope', '
         			$scope.userInfo=null;
 
         			swal({
-        				title: 'Success!',
+        				title: 'Done!',
         				text: 'User Account Created Successfully.',
         				type: 'success'
         			}, function () {

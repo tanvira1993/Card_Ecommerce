@@ -11,7 +11,9 @@
 	<link href='https://fonts.googleapis.com/css?family=Arimo:500,300,700,400' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:500,300,700,400' rel='stylesheet' type='text/css'>
 
-	<link rel="stylesheet" href="css/sweetalert.min.css"/>
+	<link rel="stylesheet" href="css/sweetalert.min.css"/> 
+
+	
 	<link rel="stylesheet" type="text/css" href="css/toastr.min.css">
 
 	<title>E-commerce</title>
@@ -27,7 +29,7 @@
 					<div class="top-links col-lg-7 col-md-6 col-sm-5 col-xs-6">
 						<ul>
 							<li class="visible-md visible-lg">
-								<a ui-sref="login">
+								<a ng-if="idUserRole==null" ui-sref="login">
 									<i class="fa fa-lock"></i>
 									<!-- Account -->
 								</a>
@@ -39,7 +41,7 @@
 								</a>
 							</li>
 							<li>
-								<a ui-sref="accountDashboard">
+								<a ng-if="idUserRole!=null" ui-sref="accountDashboard">
 									<i class="fa fa-user"></i>
 									<!-- Login -->
 								</a>
