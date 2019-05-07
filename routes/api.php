@@ -22,3 +22,18 @@ Route::post('createUser', 'UserCredentialController@saveUser');
 Route::post('login', 'UserCredentialController@login');
 
 
+Route::group(['middleware' => 'user'], function()
+{
+	
+
+});
+
+Route::group(['middleware' => 'admin'], function()
+{
+
+});
+
+Route::group(['middleware' => 'CommonMiddleware'], function()
+{
+
+});

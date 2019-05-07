@@ -79,10 +79,23 @@ Route::get('/accountNewsletter', function () {
     return view('accountNewsletter');
 });
 
-Route::get('/accountDashboard', function () {
-    return view('accountDashboard');
-});
-
 Route::get('login/logout', function () {
     return (String)view('logout_view');
+});
+
+Route::group(['middleware' => 'user'], function()
+{
+    Route::get('/accountDashboard', function () {
+        return view('accountDashboard');
+    });
+});
+
+Route::group(['middleware' => 'admin'], function()
+{
+
+});
+
+Route::group(['middleware' => 'CommonMiddleware'], function()
+{
+
 });
