@@ -65,12 +65,7 @@
 									<!-- Account -->
 								</a>
 							</li>
-                            <li>
-                                <a ng-if="idUserRole!=null" ui-sref="accountDashboard">
-                                    <i class="fa fa-user"></i>
-                                    <!-- Login -->
-                                </a>
-                            </li>
+
 							<li class="hidden-xs">
 								<a ui-sref="userRegister">
 									<i class="fa fa-user-plus"></i>
