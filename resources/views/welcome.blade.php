@@ -14,9 +14,9 @@
 	<link rel="stylesheet" href="frontend/css/sweetalert.min.css"/>
 
 	
-	<link rel="stylesheet" type="text/css" href="frontend/css/toastr.min.css">
+	<link rel="stylesheet" type="text/css" href="css/toastr.min.css">
 
-    <link rel="stylesheet" type="text/css" href="frontend/css/custom.css">
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
 
 	<title>E-commerce</title>
 
@@ -65,12 +65,7 @@
 									<!-- Account -->
 								</a>
 							</li>
-                            <li>
-                                <a ng-if="idUserRole!=null" ui-sref="accountDashboard">
-                                    <i class="fa fa-user"></i>
-                                    <!-- Login -->
-                                </a>
-                            </li>
+
 							<li class="hidden-xs">
 								<a ui-sref="userRegister">
 									<i class="fa fa-user-plus"></i>
