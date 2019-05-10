@@ -49,7 +49,7 @@
 	</div>
 </section>
 <!--Home Category : Begin-->
-<section class="home-category">
+{{--<section class="home-category">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 block block-left">
@@ -108,9 +108,9 @@
 			</div>
 		</div>
 	</div>
-</section>
+</section>--}}
 <!--Home Trust : Begin-->
-<section class="trust-w hidden-xs">
+{{--<section class="trust-w hidden-xs">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-3 col-sm-6 block-trust trust-col-quantity">
@@ -155,7 +155,7 @@
 			</div>
 		</div>
 	</div>
-</section><!--Home Trust : End-->
+</section>--}}<!--Home Trust : End-->
 <!--Home Promotions Products : Begin -->
 <section class="home-promotion-product home-product parten-bg">
 	<div class="container">
@@ -2196,24 +2196,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 item item-even">
-								<div class="inner">
-									<div class="info">
-										<div class="title">
-											<a href="#">Happy Holidays Photo Cards</a>
-										</div>
-										<div class="sub-title">
-											<p>
-												Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam...
-											</p>
-										</div>
-										<a href="#" class="read-more">Read more</a>
-									</div>
-									<a class="image" href="#">
-										<img src="frontend/images/blog/2.jpg" alt="blog-01"/>
-									</a>
-								</div>
-							</div>
+
 							<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 item">
 								<div class="inner">
 									<a class="image" href="#">
@@ -2232,24 +2215,46 @@
 									</div>
 								</div>
 							</div>
-							<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 item item-even">
-								<div class="inner">
-									<div class="info">
-										<div class="title">
-											<a href="#">Happy Holidays Photo Cards</a>
-										</div>
-										<div class="sub-title">
-											<p>
-												Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam...
-											</p>
-										</div>
-										<a href="#" class="read-more">Read more</a>
-									</div>
-									<a class="image" href="#">
-										<img src="frontend/images/blog/4.jpg" alt="blog-01"/>
-									</a>
-								</div>
-							</div>
+
+                            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 item">
+                                <div class="inner">
+                                    <a class="image" href="#">
+                                        <img src="frontend/images/blog/3.jpg" alt="blog-01"/>
+                                    </a>
+                                    <div class="info">
+                                        <div class="title">
+                                            <a href="#">Happy Holidays Photo Cards</a>
+                                        </div>
+                                        <div class="sub-title">
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam...
+                                            </p>
+                                        </div>
+                                        <a href="#" class="read-more">Read more</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 item">
+                                <div class="inner">
+                                    <a class="image" href="#">
+                                        <img src="frontend/images/blog/3.jpg" alt="blog-01"/>
+                                    </a>
+                                    <div class="info">
+                                        <div class="title">
+                                            <a href="#">Happy Holidays Photo Cards</a>
+                                        </div>
+                                        <div class="sub-title">
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam...
+                                            </p>
+                                        </div>
+                                        <a href="#" class="read-more">Read more</a>
+                                    </div>
+                                </div>
+                            </div>
+
+
 						</div>
 						<div class="wrap-item">
 							<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 item">
@@ -2270,24 +2275,24 @@
 									</div>
 								</div>
 							</div>
-							<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 item item-even">
-								<div class="inner">
-									<div class="info">
-										<div class="title">
-											<a href="#">Happy Holidays Photo Cards</a>
-										</div>
-										<div class="sub-title">
-											<p>
-												Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam...
-											</p>
-										</div>
-										<a href="#" class="read-more">Read more</a>
-									</div>
-									<a class="image" href="#">
-										<img src="frontend/images/blog/2.jpg" alt="blog-01"/>
-									</a>
-								</div>
-							</div>
+                            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 item">
+                                <div class="inner">
+                                    <a class="image" href="#">
+                                        <img src="frontend/images/blog/3.jpg" alt="blog-01"/>
+                                    </a>
+                                    <div class="info">
+                                        <div class="title">
+                                            <a href="#">Happy Holidays Photo Cards</a>
+                                        </div>
+                                        <div class="sub-title">
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam...
+                                            </p>
+                                        </div>
+                                        <a href="#" class="read-more">Read more</a>
+                                    </div>
+                                </div>
+                            </div>
 							<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 item">
 								<div class="inner">
 									<a class="image" href="#">
@@ -2306,24 +2311,24 @@
 									</div>
 								</div>
 							</div>
-							<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 item item-even">
-								<div class="inner">
-									<div class="info">
-										<div class="title">
-											<a href="#">Happy Holidays Photo Cards</a>
-										</div>
-										<div class="sub-title">
-											<p>
-												Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam...
-											</p>
-										</div>
-										<a href="#" class="read-more">Read more</a>
-									</div>
-									<a class="image" href="#">
-										<img src="frontend/images/blog/4.jpg" alt="blog-01"/>
-									</a>
-								</div>
-							</div>
+                            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 item">
+                                <div class="inner">
+                                    <a class="image" href="#">
+                                        <img src="frontend/images/blog/3.jpg" alt="blog-01"/>
+                                    </a>
+                                    <div class="info">
+                                        <div class="title">
+                                            <a href="#">Happy Holidays Photo Cards</a>
+                                        </div>
+                                        <div class="sub-title">
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam...
+                                            </p>
+                                        </div>
+                                        <a href="#" class="read-more">Read more</a>
+                                    </div>
+                                </div>
+                            </div>
 						</div>
 						<div class="wrap-item">
 							<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 item">
@@ -2344,24 +2349,24 @@
 									</div>
 								</div>
 							</div>
-							<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 item item-even">
-								<div class="inner">
-									<div class="info">
-										<div class="title">
-											<a href="#">Happy Holidays Photo Cards</a>
-										</div>
-										<div class="sub-title">
-											<p>
-												Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam...
-											</p>
-										</div>
-										<a href="#" class="read-more">Read more</a>
-									</div>
-									<a class="image" href="#">
-										<img src="frontend/images/blog/2.jpg" alt="blog-01"/>
-									</a>
-								</div>
-							</div>
+                            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 item">
+                                <div class="inner">
+                                    <a class="image" href="#">
+                                        <img src="frontend/images/blog/3.jpg" alt="blog-01"/>
+                                    </a>
+                                    <div class="info">
+                                        <div class="title">
+                                            <a href="#">Happy Holidays Photo Cards</a>
+                                        </div>
+                                        <div class="sub-title">
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam...
+                                            </p>
+                                        </div>
+                                        <a href="#" class="read-more">Read more</a>
+                                    </div>
+                                </div>
+                            </div>
 							<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 item">
 								<div class="inner">
 									<a class="image" href="#">
@@ -2380,24 +2385,24 @@
 									</div>
 								</div>
 							</div>
-							<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 item item-even">
-								<div class="inner">
-									<div class="info">
-										<div class="title">
-											<a href="#">Happy Holidays Photo Cards</a>
-										</div>
-										<div class="sub-title">
-											<p>
-												Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam...
-											</p>
-										</div>
-										<a href="#" class="read-more">Read more</a>
-									</div>
-									<a class="image" href="#">
-										<img src="frontend/images/blog/4.jpg" alt="blog-01"/>
-									</a>
-								</div>
-							</div>
+                            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 item">
+                                <div class="inner">
+                                    <a class="image" href="#">
+                                        <img src="frontend/images/blog/3.jpg" alt="blog-01"/>
+                                    </a>
+                                    <div class="info">
+                                        <div class="title">
+                                            <a href="#">Happy Holidays Photo Cards</a>
+                                        </div>
+                                        <div class="sub-title">
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam...
+                                            </p>
+                                        </div>
+                                        <a href="#" class="read-more">Read more</a>
+                                    </div>
+                                </div>
+                            </div>
 						</div>
 					</div>
 				</div>
@@ -2406,7 +2411,7 @@
 	</div>
 </section>
 <!--Home make print : Begin -->
-<section class="home-make-print">
+{{--<section class="home-make-print">
 	<div class="container">
 		<div class="row">
 			<div class="block-title-w">
@@ -2473,9 +2478,9 @@
 	<div class="bg_make_print">
 
 	</div>
-</section>
+</section>--}}
 <!--Home capabilitie : Begin -->
-<section class="home-capabititie">
+{{--<section class="home-capabititie">
 	<div class="container">
 		<div class="row">
 			<div class="block-title-w">
@@ -2518,7 +2523,7 @@
 			</div>
 		</div>
 	</div>
-</section>
+</section>--}}
 <!--Home ours service : Begin -->
 <section class="or-service">
 	<div class="container">
@@ -2601,7 +2606,7 @@
 	</div>
 </section>
 <!--Home out recent : Begin -->
-<section class="home-out-recent">
+{{--<section class="home-out-recent">
 	<div class="container">
 		<div class="row">
 			<div class="block-title-w">
@@ -3506,9 +3511,9 @@
 			</div>
 		</div>
 	</div>
-</section>
+</section>--}}
 <!--Home Testimonials : Begin -->
-<section class="home-testimonial">
+{{--<section class="home-testimonial">
 	<div class="container">
 		<div class="row">
 			<div class="tes-block" id="testimonial">
@@ -3603,7 +3608,7 @@
 			</div>
 		</div>
 	</div>
-</section>
+</section>--}}
 </main>
 <!--Add js lib-->
 <script type="text/javascript" src="frontend/js/jquery/jquery-1.11.3.min.js"></script>

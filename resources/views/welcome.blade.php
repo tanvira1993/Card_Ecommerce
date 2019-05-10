@@ -11,10 +11,12 @@
 	<link href='https://fonts.googleapis.com/css?family=Arimo:500,300,700,400' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:500,300,700,400' rel='stylesheet' type='text/css'>
 
-	<link rel="stylesheet" href="css/sweetalert.min.css"/> 
+	<link rel="stylesheet" href="frontend/css/sweetalert.min.css"/>
 
 	
-	<link rel="stylesheet" type="text/css" href="css/toastr.min.css">
+	<link rel="stylesheet" type="text/css" href="frontend/css/toastr.min.css">
+
+    <link rel="stylesheet" type="text/css" href="frontend/css/custom.css">
 
 	<title>E-commerce</title>
 
@@ -28,49 +30,58 @@
 				<div class="row">
 					<div class="top-links col-lg-7 col-md-6 col-sm-5 col-xs-6">
 						<ul>
+                            <li class="hidden-xs">
+                                <a href="https://www.facebook.com">
+                                    <i class="fa fa-facebook"></i>
+                                    <!-- Connect with facebook -->
+                                </a>
+                            </li>
+                            <li class="hidden-xs">
+                                <a href="https://twitter.com">
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li class="hidden-xs">
+                                <a href="https://www.linkedin.com">
+                                    <i class="fa fa-linkedin"></i>
+                                </a>
+                            </li>
+                            <li class="visible-md visible-lg">
+                                <a ui-sref="wishList">
+                                    <i class="fa fa-heart"></i>
+                                    <!-- Wishlist -->
+                                </a>
+                            </li>
+                            <li>
+                                <a ng-if="idUserRole!=null" ui-sref="accountDashboard">
+                                    <i class="fa fa-user"></i>
+                                    <!-- Login -->
+                                </a>
+                            </li>
 							<li class="visible-md visible-lg">
 								<a ng-if="idUserRole==null" ui-sref="login">
-									<i class="fa fa-lock"></i>
+									<i class="fa fa-sign-in"></i>
+                                    <span class="login1 ">Login</span>
 									<!-- Account -->
 								</a>
 							</li>
-							<li class="visible-md visible-lg">
-								<a ui-sref="wishList">
-									<i class="fa fa-heart"></i>
-									<!-- Wishlist -->
-								</a>
-							</li>
-							<li>
-								<a ng-if="idUserRole!=null" ui-sref="accountDashboard">
-									<i class="fa fa-user"></i>
-									<!-- Login -->
-								</a>
-							</li>
+                            <li>
+                                <a ng-if="idUserRole!=null" ui-sref="accountDashboard">
+                                    <i class="fa fa-user"></i>
+                                    <!-- Login -->
+                                </a>
+                            </li>
 							<li class="hidden-xs">
 								<a ui-sref="userRegister">
-									<i class="fa fa-pencil"></i>
+									<i class="fa fa-user-plus"></i>
+                                    <span class="login1">Register</span>
 									<!-- Sign Up -->
 								</a>
 							</li>
 							<li class="hidden-xs">
-								<a href="https://www.facebook.com">
-									<i class="fa fa-facebook"></i>
-									<!-- Connect with facebook -->
-								</a>
-							</li>
-							<li class="hidden-xs">
-								<a href="https://twitter.com">
-									<i class="fa fa-twitter"></i>
-								</a>
-							</li>							
-							<li class="hidden-xs">
-								<a href="https://www.linkedin.com">
-									<i class="fa fa-linkedin"></i>
-								</a>
-							</li>
-							<li class="hidden-xs">
 								<a ng-if="idUserRole!=null" ng-click="logout()">
-									<i class="fa fa-unlock-alt"></i>
+									<i class="fa fa-sign-out"></i>
+                                    <span class="login1">Logout</span>
 								</a>
 							</li>
 						</ul>
@@ -114,31 +125,8 @@
 					<nav id="main-menu" class="main-menu clearfix">
 						<ul>
 							<li class="level0 parent col1 all-product hd-pd">
-								<a href="#"><span>All Products</span><i class="fa fa-chevron-down"></i></a>
+								<a href="#"><span>Categories</span><i class="fa fa-chevron-down"></i></a>
 								<ul class="level0">
-									<li class="level1">
-										<span class="menu-title">Most Popular</span>
-										<ul class="level1">
-											<li class="level2">
-												<a href="detail.html" title="Business Card">Business Card</a>
-											</li>
-											<li class="level2">
-												<a href="detail.html" title="Premium Business Card">Premium Business Card</a>
-											</li>
-											<li class="level2">
-												<a href="detail.html" title="Free Business Card">Free Business Card</a>
-											</li>
-											<li class="level2">
-												<a href="detail.html" title="Marketing Materials">Marketing Materials</a>
-											</li>
-											<li class="level2">
-												<a href="detail.html" title="Dance Marketing Kit">Dance Marketing Kit</a>
-											</li>
-											<li class="level2 view-all-pro">
-												<a href="category_grid.html" title="view all product">View all</a>
-											</li>
-										</ul>
-									</li>
 									<li class="level1">
 										<span class="menu-title">Categories</span>
 										<ul class="level1">
@@ -387,14 +375,13 @@
 													<li><img src="frontend/images/banner/menu/menu-cate-calendar.png" alt="Banners Signs"></li>
 												</ul>
 											</li>
-											<li class="level2 view-all-pro">
-												<a href="category_grid.html" title="view all product">View all</a>
-											</li>
 										</ul>
 									</li>
 								</ul>
 							</li>
-							<li class="level0 parent col1 hd-pd">
+
+
+							{{--<li class="level0 parent col1 hd-pd">
 								<a href="category_grid.html" title="Business Cards">
 									<span>Business Cards</span>
 									<i class="fa fa-chevron-down"></i>
@@ -428,15 +415,15 @@
 										<a href="category_grid.html" title="Mommy Cards">Mommy Cards</a>
 									</li>
 								</ul>
+							</li>--}}
+							<li class="level0 hd-pd">
+								<a href="category_grid.html" title="Marketing">Blog</a>
 							</li>
 							<li class="level0 hd-pd">
-								<a href="category_grid.html" title="Marketing">Marketing</a>
-							</li>
-							<li class="level0 hd-pd">
-								<a href="category_list.html" title="Postcards">Postcards</a>
+								<a href="category_list.html" title="Postcards">About Us</a>
 							</li>
 							<li class="level0 hd-pd" title="About Us">
-								<a href="about-us.html">About Us</a>
+								<a href="about-us.html">Contact Us</a>
 							</li>
 						</ul>
 					</nav>
@@ -641,7 +628,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="footer-bottom">
+	{{--<div class="footer-bottom">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
@@ -653,7 +640,7 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</div>--}}
 </footer>
 <div id="sitebodyoverlay"></div>
 <nav id="mb-main-menu" class="main-menu">
