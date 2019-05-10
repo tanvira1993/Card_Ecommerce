@@ -14,9 +14,9 @@
 	<link rel="stylesheet" href="frontend/css/sweetalert.min.css"/>
 
 	
-	<link rel="stylesheet" type="text/css" href="frontend/css/toastr.min.css">
+	<link rel="stylesheet" type="text/css" href="css/toastr.min.css">
 
-    <link rel="stylesheet" type="text/css" href="frontend/css/custom.css">
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
 
 	<title>E-commerce</title>
 
