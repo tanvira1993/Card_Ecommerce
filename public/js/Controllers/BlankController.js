@@ -3,10 +3,5 @@ angular.module('EcommerceApp').controller('BlankController', ['$scope', '$rootSc
 	$scope.$on('$viewContentLoaded', function() {
         // initialize core components
         
-
-        // set default layout mode
-        /*$rootScope.settings.layout.pageContentWhite = true;
-        $rootScope.settings.layout.pageBodySolid = false;
-        $rootScope.settings.layout.pageSidebarClosed = false;*/
     });
 }]);
