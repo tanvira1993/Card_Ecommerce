@@ -52,6 +52,9 @@ angular.module('EcommerceApp').controller('LoginController', ['$scope', '$rootSc
                     toastr.error("Login Failed..!!")
                 });
         	}
+            else{
+                toastr.error("Login Failed..!!")
+            }
         }
 
     });

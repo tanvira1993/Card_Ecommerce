@@ -11,12 +11,12 @@
 	<link href='https://fonts.googleapis.com/css?family=Arimo:500,300,700,400' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:500,300,700,400' rel='stylesheet' type='text/css'>
 
-	<link rel="stylesheet" href="frontend/css/sweetalert.min.css"/>
+	<link rel="stylesheet" href="css/sweetalert.min.css"/>
 
 	
 	<link rel="stylesheet" type="text/css" href="css/toastr.min.css">
 
-    <link rel="stylesheet" type="text/css" href="css/custom.css">
+	<link rel="stylesheet" type="text/css" href="frontend/css/custom.css">
 
 	<title>E-commerce</title>
 
@@ -30,38 +30,38 @@
 				<div class="row">
 					<div class="top-links col-lg-7 col-md-6 col-sm-5 col-xs-6">
 						<ul>
-                            <li class="hidden-xs">
-                                <a href="https://www.facebook.com">
-                                    <i class="fa fa-facebook"></i>
-                                    <!-- Connect with facebook -->
-                                </a>
-                            </li>
-                            <li class="hidden-xs">
-                                <a href="https://twitter.com">
-                                    <i class="fa fa-twitter"></i>
-                                </a>
-                            </li>
-                            <li class="hidden-xs">
-                                <a href="https://www.linkedin.com">
-                                    <i class="fa fa-linkedin"></i>
-                                </a>
-                            </li>
-                            <li class="visible-md visible-lg">
-                                <a ui-sref="wishList">
-                                    <i class="fa fa-heart"></i>
-                                    <!-- Wishlist -->
-                                </a>
-                            </li>
-                            <li>
-                                <a ng-if="idUserRole!=null" ui-sref="accountDashboard">
-                                    <i class="fa fa-user"></i>
-                                    <!-- Login -->
-                                </a>
-                            </li>
+							<li class="hidden-xs">
+								<a href="https://www.facebook.com">
+									<i class="fa fa-facebook"></i>
+									<!-- Connect with facebook -->
+								</a>
+							</li>
+							<li class="hidden-xs">
+								<a href="https://twitter.com">
+									<i class="fa fa-twitter"></i>
+								</a>
+							</li>
+							<li class="hidden-xs">
+								<a href="https://www.linkedin.com">
+									<i class="fa fa-linkedin"></i>
+								</a>
+							</li>
+							<li class="visible-md visible-lg">
+								<a ui-sref="wishList">
+									<i class="fa fa-heart"></i>
+									<!-- Wishlist -->
+								</a>
+							</li>
+							<li>
+								<a ng-if="idUserRole!=null" ui-sref="accountDashboard">
+									<i class="fa fa-user"></i>
+									<!-- Login -->
+								</a>
+							</li>
 							<li class="visible-md visible-lg">
 								<a ng-if="idUserRole==null" ui-sref="login">
 									<i class="fa fa-sign-in"></i>
-                                    <span class="login1 ">Login</span>
+									<span class="login1 ">Login</span>
 									<!-- Account -->
 								</a>
 							</li>
@@ -69,14 +69,21 @@
 							<li class="hidden-xs">
 								<a ui-sref="userRegister">
 									<i class="fa fa-user-plus"></i>
-                                    <span class="login1">Register</span>
+									<span class="login1">Register</span>
+									<!-- Sign Up -->
+								</a>
+							</li>
+							<li class="hidden-xs">
+								<a ui-sref="subCategoryCreate">
+									<i class="fa fa-user-plus"></i>
+									<span class="login1">Sub</span>
 									<!-- Sign Up -->
 								</a>
 							</li>
 							<li class="hidden-xs">
 								<a ng-if="idUserRole!=null" ng-click="logout()">
 									<i class="fa fa-sign-out"></i>
-                                    <span class="login1">Logout</span>
+									<span class="login1">Logout</span>
 								</a>
 							</li>
 						</ul>
