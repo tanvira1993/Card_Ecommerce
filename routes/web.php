@@ -271,7 +271,13 @@ Route::get('/editCategory', function () {
 
 //ADDED BY HASHMI 
 
+Route::get('/addressCreate', function () {
+    return view('addressCreate');
+});
 
+Route::get('/manageAddressBook', function () {
+    return view('manageAddressBook');
+});
 
 
 

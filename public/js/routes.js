@@ -664,6 +664,42 @@ EcommerceApp.config(['$stateProvider', '$urlRouterProvider', function($stateProv
 
     //ADDED BY HASHMI 
 
+        .state('addressCreate', {
+            url: "/addressCreate",
+            templateUrl: "/addressCreate",
+            data: {pageTitle: 'Address Create'},
+            controller: "AddressCreateController",
+            resolve: {
+                deps: ['$ocLazyLoad', function ($ocLazyLoad) {
+                    return $ocLazyLoad.load({
+                        name: 'EcommerceApp',
+                        insertBefore: '#ng_load_plugins_before', // load the above css files before a LINK element with this ID. Dynamic CSS files must be loaded between core and theme css files
+                        files: [
+                            'js/Controllers/AddressCreateController.js'
+                        ]
+                    });
+                }]
+            }
+        })
+
+        .state('manageAddressBook', {
+            url: "/manageAddressBook",
+            templateUrl: "/manageAddressBook",
+            data: {pageTitle: 'Address Create'},
+            controller: "manageAddressBookController",
+            resolve: {
+                deps: ['$ocLazyLoad', function ($ocLazyLoad) {
+                    return $ocLazyLoad.load({
+                        name: 'EcommerceApp',
+                        insertBefore: '#ng_load_plugins_before', // load the above css files before a LINK element with this ID. Dynamic CSS files must be loaded between core and theme css files
+                        files: [
+                            'js/Controllers/manageAddressBookController.js'
+                        ]
+                    });
+                }]
+            }
+        })
+
 
 
 
