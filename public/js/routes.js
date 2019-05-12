@@ -1075,5 +1075,42 @@ EcommerceApp.config(['$stateProvider', '$urlRouterProvider', function($stateProv
     //ADDED BY SIAM
 
 
+    .state('blog', {
+        url: "/blog",
+        templateUrl: "/blog",
+        data: {pageTitle: 'Blog'},
+        controller: "BlogController",
+        resolve: {
+            deps: ['$ocLazyLoad', function ($ocLazyLoad) {
+                return $ocLazyLoad.load({
+                    name: 'EcommerceApp',
+                    insertBefore: '#ng_load_plugins_before', // load the above css files before a LINK element with this ID. Dynamic CSS files must be loaded between core and theme css files
+                    files: [
+                    'js/controllers/BlogController.js'
+                    ]
+                });
+            }]
+        }
+    })
+
+    .state('blogCreate', {
+        url: "/blogCreate",
+        templateUrl: "/blogCreate",
+        data: {pageTitle: 'Blog'},
+        controller: "BlogCreateController",
+        resolve: {
+            deps: ['$ocLazyLoad', function ($ocLazyLoad) {
+                return $ocLazyLoad.load({
+                    name: 'EcommerceApp',
+                    insertBefore: '#ng_load_plugins_before', // load the above css files before a LINK element with this ID. Dynamic CSS files must be loaded between core and theme css files
+                    files: [
+                    'js/controllers/BlogCreateController.js'
+                    ]
+                });
+            }]
+        }
+    })
+
+
 
 }]);

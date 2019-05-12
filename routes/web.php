@@ -404,8 +404,13 @@ Route::get('/editCategory', function () {
 
 // ADDED BY SIAM
 
+Route::get('/blog', function () {
+    return view('blog');
+});
 
-
+Route::get('/blogCreate', function () {
+    return view('admin/blogCreate');
+});
 
 
 

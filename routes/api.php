@@ -489,4 +489,6 @@ Route::group(['middleware' => 'CommonMiddleware'], function()
 
 
 
-//DDED BY SIAM
+//ADDED BY SIAM
+
+Route::post('blogCreate', 'BlogCreateController@save');
