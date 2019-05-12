@@ -26,6 +26,7 @@ Route::post('createSubCategory', 'SubCategoryController@save');
 Route::delete('categoryDelete/{id}', 'CategoryController@deleteCategory');
 Route::get('categoryListById/{id}', 'CategoryController@getCategoryById');
 Route::post('editCategory/{id}', 'CategoryController@update');
+Route::post('addressCreate', 'AddressCreateController@save');
 
 
 
