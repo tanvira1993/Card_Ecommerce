@@ -419,7 +419,7 @@
 								</ul>
 							</li>--}}
 							<li class="level0 hd-pd">
-								<a href="category_grid.html" title="Marketing">Blog</a>
+								<a ui-sref="blog" title="Blog Page">Blog</a>
 							</li>
 							<li class="level0 hd-pd">
 								<a href="category_list.html" title="Postcards">About Us</a>
